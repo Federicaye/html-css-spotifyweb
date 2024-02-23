@@ -92,10 +92,13 @@ main {
     border-radius: 50%;
 }
 
+
+/* HEADER */
 header {
     height: 50px;
     position: fixed;
     top: 0;
     left: 200px;
     width: calc(100% - 200px);
+    background-color: #00000038;
 }
