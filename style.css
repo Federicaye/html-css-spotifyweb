@@ -38,6 +38,9 @@
     justify-content: center;
 }
 
+.justify-end {
+    justify-content: flex-end;
+}
 
 .gap-10 {
     gap: 10px;
@@ -109,4 +112,8 @@ header {
     left: 200px;
     width: calc(100% - 200px);
     background-color: #00000038;
+}
+
+header a {
+    border: 1px solid black;
 }
