@@ -22,11 +22,25 @@
     display: flex;
 }
 
+.column {
+    flex-direction: column; 
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+
+
 .gap-10 {
     gap: 10px;
 }
 
-.wrapp {
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrapper {
     height:100vh;
     background-color: aqua;
 }
@@ -42,10 +56,20 @@
     background-color: orange;
 }
 
+/* SIDEBAR SIDEBAR SIDEBAR */
+
 #sidebar {
     width: 200px;
     height: 100%;
     background-color: green;
+}
+
+.icon {
+    width: 20%;
+}
+
+.menu {
+    width: 80%;
 }
 
 /* MAIN */
