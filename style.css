@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    list-style-type: none;
+}
+
+:root {
+	--color-main: #141922;
+	--color-sidebar: #000000;
+	--color-toolbar: #282828;
+	--color-button: #a3a3a3;
+	--color-green: #adff2f;
+}
+
+/* font montserrant */
+/* text trasform */
+
+/* FLEX UTILITY */
+
+.d-flex {
+    display: flex;
+}
+
+.wrapp {
+    height:100vh;
+    background-color: aqua;
+}
+
+#toolbar {
+    background-color: red;
+    height: 90px;
+}
+
+.content {
+    height: calc(100vh - 90px);
+    width: 100%;
+    background-color: orange;
+}
+
+#sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: green;
+}
+
+/* MAIN */
+main {
+    width: calc(100% - 200px);
+    padding: 100px 20px 20px 20px;
+    overflow-y: auto;
+}
+
+.card1 {
+    width: calc(100% / 6);
+}
+
+.card1 img {
+    width: 100%
+}
+
+header {
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
+}
