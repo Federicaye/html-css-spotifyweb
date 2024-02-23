@@ -22,6 +22,10 @@
     display: flex;
 }
 
+.gap-10 {
+    gap: 10px;
+}
+
 .wrapp {
     height:100vh;
     background-color: aqua;
@@ -51,12 +55,17 @@ main {
     overflow-y: auto;
 }
 
-.card1 {
-    width: calc(100% / 6);
+.card {
+    width: calc(100% / 6 - 10px);
 }
 
-.card1 img {
-    width: 100%
+.card img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.round {
+    border-radius: 50%;
 }
 
 header {
