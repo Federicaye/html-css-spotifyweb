@@ -59,6 +59,8 @@
     background-color: aqua;
 }
 
+/* TOOLBAR TOOLBAR TOOLBAR */
+
 #toolbar {
     background-color: red;
     height: 90px;
@@ -68,6 +70,26 @@
     height: calc(100vh - 90px);
     width: 100%;
     background-color: orange;
+}
+
+#toolbar img {
+    width: 60px;
+}
+
+.brano {
+ vertical-align: ;
+}
+
+.progress-bar {
+    height: 5px;
+    width: 100px;
+    background-color: #000000;
+}
+
+.volume {
+    height: 5px;
+    width: 50px;
+    background-color: #000000;
 }
 
 /* SIDEBAR SIDEBAR SIDEBAR */
@@ -120,4 +142,29 @@ header {
 
 header a {
     border: 1px solid black;
+}
+
+/* MEDIA QUERY MEDIA QUERY*/
+
+@media screen and (max-width: 992px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: calc(100% / 4 - 10px);
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+@media screen and (max-width: 992px) {
+    
 }
