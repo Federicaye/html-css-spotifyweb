@@ -17,7 +17,7 @@
         <!-- CONTENT CONTENT CONTENT -->
         <div class="content d-flex">
             <header class="d-flex align-center justify-end">
-                <div><a href="">effettua l'upgrade</a></div>
+                <div><a class="text-transform" href="">effettua l'upgrade</a></div>
             </header>
 
             <!-- SIDEBAR SIDEBAR SIDEBAR -->
@@ -26,6 +26,7 @@
                 <!-- FLEX-ITEM 1 -->
                 <div id="sidebar-menu">
                     <img src="img/logo.svg" alt="">
+                    <img id="logo-small" src="img/logo-small.svg" alt="">
 
                     <!-- SIDEBAR MENU -->
                     <div id="nav-side" class="d-flex column wrap">
@@ -43,10 +44,11 @@
                         </div>
                     </div>
 
-                    <div class="text-transform">playlist</div>
-                    <div>
-                        <div></div>
-                        <div></div>
+                    <div class="text-transform create-playlist">playlist</div>
+                    <div class="d-flex create-playlist">
+                        
+                        <div><i class="fa-regular fa-square-plus"></i></div>
+                        <div>Create Playlist</div>
                     </div>
                     <div></div>
                     <div class="playlist">Nome Playlist</div>
@@ -59,12 +61,16 @@
                 </div>
 
                 <!-- FLEX-ITEM -->
-                <div class="d-flex wrap">
-
-                    <div class="icon"><i class="fa-solid fa-house"></i></div>
-                    <div class="menu">installa app</div>
-                    <div class="icon"><i class="fa-solid fa-house"></i></div>
-                    <div class="menu">installa app</div>
+                <div class="d-flex wrap column">
+                    <div class="d-flex">
+                        <div class="icon"><i class="fa-solid fa-house"></i></div>
+                        <div class="menu">installa app</div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="icon"><i class="fa-regular fa-circle-user"></i></div>
+                        <div class="menu"> Jonh Doee</div>
+                    </div>
+                    
 
                 </div>
 
@@ -73,7 +79,7 @@
             <!-- MAIN MAIN MAIN MAIN -->
             <main>
                 <!-- nav -->
-                <div class="nav d-flex justify-center gap-10">
+                <div class="nav d-flex justify-center gap-10 text-transform">
 
                     <div>in evidenza</div>
                     <div>podpast</div>

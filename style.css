@@ -91,6 +91,10 @@
 
 /* SIDEBAR SIDEBAR SIDEBAR */
 
+#logo-small {
+    display: none;
+}
+
 #sidebar {
     width: 200px;
     height: 100%;
@@ -187,6 +191,15 @@ header a {
 
     main {
         width: calc(100% - 30px);
+    }
+
+    .create-playlist {
+        display: none;
+    }
+
+    #logo-small {
+        display: block;
+        width: 100%;
     }
 
 }
