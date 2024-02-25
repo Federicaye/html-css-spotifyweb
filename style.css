@@ -102,7 +102,7 @@
 }
 
 .icon {
-    width: 20%;
+    width: 5%;
 }
 
 .menu {
@@ -151,6 +151,10 @@ header a {
         flex-wrap: wrap;
     }
 
+    .row {
+        display: flex;
+    }
+
     .card {
         width: calc(100% / 4 - 10px);
         flex-wrap: wrap;
@@ -163,7 +167,30 @@ header a {
 }
 
 @media screen and (max-width: 576px) {
-    
+    .menu {
+        display: none;
+    }
+
+    #sidebar {
+        width: 30px;
+    }
+
+    header {
+        width: calc(100% - 30px);
+    }
+
+    .playlist {
+        display: none;
+    }
+
+    #sidebar-menu img {
+        display: none;
+    }
+
+    main {
+        width: calc(100% - 30px);
+    }
+
 }
 @media screen and (max-width: 992px) {
     
