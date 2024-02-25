@@ -76,9 +76,6 @@
     width: 60px;
 }
 
-.brano {
- vertical-align: ;
-}
 
 .progress-bar {
     height: 5px;
@@ -177,6 +174,7 @@ header a {
 
     header {
         width: calc(100% - 30px);
+        left: 30px;
     }
 
     .playlist {
