@@ -6,15 +6,20 @@
 }
 
 :root {
-	--color-main: #141922;
-	--color-sidebar: #000000;
-	--color-toolbar: #282828;
-	--color-button: #a3a3a3;
-	--color-green: #adff2f;
+    --color-main: #141922;
+    --color-sidebar: #000000;
+    --color-toolbar: #282828;
+    --color-button: #a3a3a3;
+    --color-green: #adff2f;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;;
+    font-family: "Montserrat", sans-serif;
+    ;
+}
+
+a {
+    text-decoration: none;
 }
 
 .text-transform {
@@ -31,7 +36,7 @@ body {
 }
 
 .column {
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .space-between {
@@ -59,7 +64,7 @@ body {
 }
 
 .wrapper {
-    height:100vh;
+    height: 100vh;
     background-color: aqua;
 }
 
@@ -70,11 +75,7 @@ body {
     height: 90px;
 }
 
-.content {
-    height: calc(100vh - 90px);
-    width: 100%;
-    background-color: orange;
-}
+
 
 #toolbar img {
     width: 60px;
@@ -106,6 +107,22 @@ body {
     overflow-y: hidden;
 }
 
+#sidebar-menu {
+    height: calc(100% - 80px);
+    width: 100%;
+    min-height: 0px;
+}
+
+#sidebar-account {
+    height: 80px;
+    width: 100%;
+}
+
+#add-playlist {
+    overflow: auto;
+    height: 200px;
+}
+
 .icon {
     width: 5%;
 }
@@ -115,14 +132,44 @@ body {
 }
 
 /* MAIN */
+
+.nav a:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60%;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.nav a:hover:after {
+    background-color: var(--color-green);
+}
+
+.nav a:hover {
+    color: white;
+}
+
+
+.content {
+    height: calc(100vh - 90px);
+    width: 100%;
+    background-color: orange;
+}
+
 main {
     width: calc(100% - 200px);
     padding: 100px 20px 20px 20px;
     overflow-y: auto;
 }
 
+.row {
+    padding: 10px;
+}
+
 .card {
     width: calc(100% / 6 - 10px);
+    cursor: pointer;
 }
 
 .card img {
@@ -133,7 +180,6 @@ main {
 .round {
     border-radius: 50%;
 }
-
 
 /* HEADER */
 header {
@@ -173,10 +219,25 @@ header a {
 
 
 @media screen and (max-width: 768px) {
-    
+
+    .card {
+        width: calc(100% / 3 - 10px);
+        flex-wrap: wrap;
+    }
+
+    .nav li {
+        font-size: 0.8em;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
+    .card {
+        width: calc(100% / 2 - 10px);
+        flex-wrap: wrap;
+    }
+
+
     .menu {
         display: none;
     }
@@ -212,6 +273,5 @@ header a {
     }
 
 }
-@media screen and (max-width: 992px) {
-    
-}
+
+@media screen and (max-width: 992px) {}
