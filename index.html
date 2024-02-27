@@ -30,7 +30,7 @@
                 <!-- FLEX-ITEM 1 -->
                 <div id="sidebar-menu">
                     <div>
-                        <img src="img/logo.svg" alt="">
+                        <img id="logo" src="img/logo.svg" alt="">
                         <img id="logo-small" src="img/logo-small.svg" alt="">
                     </div>
 
@@ -57,7 +57,7 @@
 
                         <div class="text-transform create-playlist">playlist</div>
 
-                        <div class= "create-playlist">
+                        <div class="create-playlist">
 
                             <div><img src="img/" alt=""></div>
                             <div>Create Playlist</div>
@@ -88,7 +88,7 @@
                             <li>nome playlist</li>
                             <li>nome playlist</li>
                             <li>nome playlist</li>
-                            
+
                         </ul>
 
                     </div>
@@ -173,18 +173,18 @@
 
         <div id="toolbar" class="d-flex space-between align-center">
             <div class="d-flex align-center gap-10">
-                <div class="brano"><img src="img/sinister.jpeg" alt=""></div>
-                <div class="brano">
+                <div><img src="img/sinister.jpeg" alt=""></div>
+                <div>
                     <div>Sinister</div>
-                    <div>Brano nome</div>
+                    <div class="brano-nome">Brano nome</div>
                 </div>
-                <div class="brano d-flex gap-10">
+                <div class="like-save d-flex gap-10">
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-regular fa-folder"></i>
                 </div>
             </div>
 
-            <div class="d-flex column">
+            <div class="d-flex column gap-10">
                 <div class="d-flex justify-center gap-10">
                     <div><i class="fa-solid fa-shuffle"></i></div>
                     <div><i class="fa-solid fa-forward-step"></i></div>
@@ -193,18 +193,22 @@
                     <div><i class="fa-solid fa-arrow-rotate-left"></i></div>
 
                 </div>
-                <div class="d-flex align-center">
+                <div class="d-flex align-center gap-10">
                     <div>0:20</div>
                     <div class="progress-bar"></div>
                     <div>4:90</div>
                 </div>
             </div>
 
-            <div class="d-flex align-center gap-10">
-                <div><i class="fa-solid fa-flask"></i></div>
-                <div><i class="fa-solid fa-tv"></i></div>
-                <div><i class="fa-solid fa-volume-high"></i></div>
-                <div class="volume"></div>
+            <div class="d-flex align-center gap-10" id="toolbar-right">
+                <div class="d-flex gap-10">
+                    <div><i class="fa-solid fa-flask"></i></div>
+                    <div><i class="fa-solid fa-tv"></i></div>
+                    <div><i class="fa-solid fa-volume-high"></i></div>                   
+                </div>
+                <div>
+                    <div class="volume"></div>
+                </div>
             </div>
 
         </div>

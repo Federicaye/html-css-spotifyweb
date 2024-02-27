@@ -15,11 +15,12 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    ;
+    color: white;
 }
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 .text-transform {
@@ -71,9 +72,10 @@ a {
 /* TOOLBAR TOOLBAR TOOLBAR */
 
 #toolbar {
-    background-color: red;
+    background-color: var(--color-toolbar);
     height: 90px;
     color: white;
+    padding: 0px 20px;
 }
 
 #toolbar img {
@@ -84,16 +86,20 @@ a {
 .progress-bar {
     height: 5px;
     width: 300px;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 .volume {
     height: 5px;
     width: 50px;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 /* SIDEBAR SIDEBAR SIDEBAR */
+
+#nav-side ul {
+    padding-inline-start: 0px;
+}
 
 #logo-small {
     display: none;
@@ -102,14 +108,14 @@ a {
 #sidebar {
     width: 200px;
     height: 100%;
-    background-color: green;
+    background-color: var(--color-sidebar);
     overflow-y: hidden;
 }
 
 #sidebar-menu {
     height: calc(100% - 60px);
     width: 100%;
-    
+
 }
 
 #sidebar-account {
@@ -122,11 +128,13 @@ a {
 
 #add-playlist {
     min-height: 0px;
+    padding-left: 10px;
 }
 
 #add-playlist ul {
     overflow: auto;
     height: 100px;
+    padding-inline-start: 0px;
 }
 
 .icon {
@@ -154,6 +162,7 @@ a {
 
 /* MAIN */
 
+
 .nav a:after {
     content: "";
     display: block;
@@ -175,7 +184,7 @@ a {
 .content {
     height: calc(100vh - 90px);
     width: 100%;
-    background-color: orange;
+    background-color: var(--color-main);
     overflow: hidden;
 }
 
@@ -277,7 +286,6 @@ header a {
         flex-wrap: wrap;
     }
 
-
     .menu {
         display: none;
     }
@@ -291,11 +299,7 @@ header a {
         left: 40px;
     }
 
-    .playlist {
-        display: none;
-    }
-
-    #sidebar-menu img {
+    #add-playlist {
         display: none;
     }
 
@@ -310,6 +314,34 @@ header a {
     #logo-small {
         display: block;
         width: 100%;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #toolbar {
+        overflow: hidden;
+    }
+
+    .like-save {
+        flex-direction: column;
+    }
+
+    #toolbar img {
+        width: 30px;
+    }
+
+    .brano-nome {
+        display: none;
+    }
+
+    .progress-bar {
+        width: 100px;
+    }
+
+    .volume {
+        display: none;
     }
 
 }
