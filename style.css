@@ -73,6 +73,8 @@ a {
 #toolbar {
     background-color: red;
     height: 90px;
+    position: relative;
+    z-index: 1000;
 }
 
 
@@ -110,16 +112,23 @@ a {
 #sidebar-menu {
     height: calc(100% - 60px);
     width: 100%;
-    min-height: 0px;
+    
 }
 
 #sidebar-account {
     height: 60px;
     width: 100%;
+    background-color: var(--color-sidebar);
+    position: relative;
+    z-index: 99;
 }
 
 #add-playlist {
-    overflow-y: scroll;
+    min-height: 0px;
+}
+
+#add-playlist ul {
+    overflow-y: auto;
     height: 100%;
 }
 
