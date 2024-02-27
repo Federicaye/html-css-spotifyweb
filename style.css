@@ -76,6 +76,8 @@ a {
     height: 90px;
     color: white;
     padding: 0px 20px;
+    position: relative;
+    z-index: 10000;
 }
 
 #toolbar img {
@@ -151,6 +153,10 @@ a {
     padding-left: 15px;
 }
 
+#nav-side li{
+    opacity: 0.8;
+}
+
 #nav-side li {
     border-left: solid 3px;
     border-color: transparent;
@@ -158,7 +164,10 @@ a {
 
 #nav-side li:hover {
     border-color: var(--color-green);
+    opacity: 1;
 }
+
+
 
 /* MAIN */
 
