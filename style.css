@@ -73,9 +73,8 @@ a {
 #toolbar {
     background-color: red;
     height: 90px;
+    color: white;
 }
-
-
 
 #toolbar img {
     width: 60px;
@@ -84,7 +83,7 @@ a {
 
 .progress-bar {
     height: 5px;
-    width: 100px;
+    width: 300px;
     background-color: #000000;
 }
 
@@ -229,6 +228,7 @@ header {
     left: 200px;
     width: calc(100% - 200px);
     background-color: #00000038;
+    overflow: hidden;
 }
 
 header a {
