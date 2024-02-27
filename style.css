@@ -97,6 +97,15 @@ a {
     background-color: #ffffff;
 }
 
+#toolbar .fa-play {
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+#toolbar .fa-play:hover {
+    font-size: 2em;
+}
+
 /* SIDEBAR SIDEBAR SIDEBAR */
 
 #nav-side ul {
