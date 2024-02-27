@@ -133,6 +133,16 @@ a {
     padding-left: 10px;
 }
 
+#add-playlist li,
+#add-playlist div {
+    opacity: 0.8;
+}
+
+#add-playlist li:hover,
+#add-playlist div:hover {
+    opacity: 1;
+}
+
 #add-playlist ul {
     overflow: auto;
     height: 100%;
@@ -153,7 +163,7 @@ a {
     padding-left: 15px;
 }
 
-#nav-side li{
+#nav-side li {
     opacity: 0.8;
 }
 
