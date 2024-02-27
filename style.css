@@ -108,27 +108,42 @@ a {
 }
 
 #sidebar-menu {
-    height: calc(100% - 80px);
+    height: calc(100% - 60px);
     width: 100%;
     min-height: 0px;
 }
 
 #sidebar-account {
-    height: 80px;
+    height: 60px;
     width: 100%;
 }
 
 #add-playlist {
-    overflow: auto;
-    height: 200px;
+    overflow-y: scroll;
+    height: 100%;
 }
 
 .icon {
-    width: 5%;
+    width: 27px;
+    opacity: 0.8;
+    color: white;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 .menu {
     width: 80%;
+    padding-left: 15px;
+}
+
+#nav-side li {
+    border-left: solid 3px;
+    border-color: transparent;
+}
+
+#nav-side li:hover {
+    border-color: var(--color-green);
 }
 
 /* MAIN */
@@ -175,7 +190,7 @@ main {
 
 .card:hover .card-img:after {
     content: "\f144";
-    font-family: "Font Awesome 6 free";
+    font-family: Font Awesome;
     font-size: 4em;
     justify-content: center;
     align-items: center;
@@ -260,12 +275,12 @@ header a {
     }
 
     #sidebar {
-        width: 30px;
+        width: 40px;
     }
 
     header {
-        width: calc(100% - 30px);
-        left: 30px;
+        width: calc(100% - 40px);
+        left: 40px;
     }
 
     .playlist {
@@ -277,7 +292,7 @@ header a {
     }
 
     main {
-        width: calc(100% - 30px);
+        width: calc(100% - 40px);
     }
 
     .create-playlist {
