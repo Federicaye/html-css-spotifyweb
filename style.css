@@ -73,8 +73,6 @@ a {
 #toolbar {
     background-color: red;
     height: 90px;
-    position: relative;
-    z-index: 1000;
 }
 
 
@@ -128,8 +126,8 @@ a {
 }
 
 #add-playlist ul {
-    overflow-y: auto;
-    height: 100%;
+    overflow: auto;
+    height: 100px;
 }
 
 .icon {
@@ -179,6 +177,7 @@ a {
     height: calc(100vh - 90px);
     width: 100%;
     background-color: orange;
+    overflow: hidden;
 }
 
 main {
